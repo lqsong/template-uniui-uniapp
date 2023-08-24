@@ -1,0 +1,121 @@
+/**
+ * @description 全局css文件
+ * @author LiQingSong
+ */
+/* uni-scss */
+@import '@/uni_modules/uni-scss/index.scss';
+/* 自定义variables  */
+@import "./variables.scss";
+
+page {
+	background-color: var(--ft-bg-color);
+}
+
+/* 文字省略 */
+.ft-ellipsis{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.ft-ellipsis--l2,
+.ft-ellipsis--l3{
+	display: -webkit-box;
+    overflow: hidden;    
+    text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+}
+.ft-ellipsis--l2 {	
+    -webkit-line-clamp: 2;	
+}
+.ft-ellipsis--l3 {   
+    -webkit-line-clamp: 3;
+}
+
+/* group-card */
+.group-card-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	.text {
+		font-weight: 600;
+	}
+	.more{
+		display: flex;
+		font-size: 12px;
+	}
+}
+/* flex-grid  item配合行内样式 style="flex-basis: 实际值%;"  实际值=100/列数*/
+.flex-grid {
+	display: flex;
+	flex-wrap: wrap;
+	.flex-grid-item {
+		position: relative;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 16px 0;
+		font-size: 12px;
+	}
+}
+
+/* user-layout S */
+.user-layout {
+	min-height: 100vh;
+	background-color: var(--ft-color-white);
+	.user-title {
+		display: flex;
+		align-items: center;
+		padding: 30px 20px 10px;
+		font-size: 25px;
+	}
+	.user-subtitle {
+		display: flex;
+		padding: 0 20px 30px;
+		font-size: 14px;
+		.nav {
+			color: var(--ft-color-primary);
+		}
+	}
+	.user-form {
+		padding: 0 20px;
+	}
+
+	.user-btn {
+		padding: 0 20px;
+		.btn {
+			background-image: linear-gradient(to right, #ff6034, #ee0a24);
+			font-size: 16px;
+		}
+	}
+}
+
+
+/* product */
+.pro-item {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	.img {
+		width: 100%;
+		height: 173px;
+		margin-bottom: 8px;
+	}
+	.title,
+	.price {
+		padding: 0 8px;
+		font-size: 14px;
+	}
+	.price {
+		color: var(--ft-color-primary);
+		text {
+			font-size: 20px;
+			line-height: 35px;
+		}
+	}
+}

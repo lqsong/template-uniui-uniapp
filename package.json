@@ -1,0 +1,22 @@
+{
+  "name": "template-uniui-uniapp",
+  "version": "1.0.0",
+  "description": "是一个基于uni-app 、uni-ui 、vue3 、pinia 的手机端前端解决方案",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.9",
+    "lodash": "^4.17.21",
+    "qs": "^6.11.2"
+  },
+  "keywords": [
+    "uni-app",
+    "uni-ui",
+    "vue3",
+    "pinia"
+  ],
+  "author": "LiQingSong",
+  "license": "ISC"
+}

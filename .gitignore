@@ -1,0 +1,25 @@
+
+# dependencies
+/node_modules
+*.local
+
+# Logs
+logs
+*.log
+/npm-debug.log*
+/yarn-error.log
+
+# production
+/dist
+/unpackage/dist/dev
+/unpackage/dist/build
+
+# misc
+.DS_Store
+.hbuilderx
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+
+

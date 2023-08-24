@@ -1,0 +1,51 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				
+			}
+		},
+		{
+			"path": "pages/member/index/index",
+			"style": {
+				"navigationBarTitleText": "用户中心"				
+			}
+		},
+		{
+			"path": "pages/member/set/set",
+			"style": {
+				"navigationBarTitleText": "用户设置",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/user/login/login",
+			"style": {
+				"navigationBarTitleText": "login"
+			}
+		},
+		{
+			"path": "pages/user/register/register",
+			"style": {
+				"navigationBarTitleText": "register"
+			}
+		}        
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "template-uniui-uniapp",
+		"navigationStyle": "custom",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#f6f6f6",
+		"app-plus": {
+			"background": "#f6f6f6"
+		}
+	},	
+	"easycom": {
+	  "autoscan": true,
+	  "custom": {
+	    "^layout-(.*)": "@/layouts/layout-$1/layout-$1.vue" // 匹配layouts目录内的vue文件
+	  }
+	}
+}

@@ -1,0 +1,18 @@
+/**
+ * @description var
+ * @author LiQingSong
+ */
+page {
+	// 白天模式
+	color-scheme: light;
+
+	// 颜色
+	--ft-color-white: #ffffff;
+	--ft-color-white-1: #f6f6f6;
+	--ft-color-black: #000000;
+	--ft-color-primary: #c82519;
+	
+	// 页面 - 背景色
+	--ft-bg-color: var(--ft-color-white-1);
+
+}
